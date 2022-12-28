@@ -17,7 +17,7 @@ app.config.from_object(app_settings)
 db = SQLAlchemy(app)
 
 #model
-class User(db.model):
+class User(db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(128), nullable=False)
