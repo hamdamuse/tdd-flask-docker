@@ -1,7 +1,7 @@
 import json
 
 
-def test_add_user():
+def test_add_user(test_app, test_database):
     client = test_app.test_client()
     resp = client.post('/users',
     data=json.dumps({
