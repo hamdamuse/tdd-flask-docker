@@ -1,11 +1,11 @@
 from flask import Blueprint, request
-from flask_restex import Resource, Api
+from flask_restx import Resource, Api
 
 from src import db
 from src.api.models import User
 
-user_blueprint = Blueprint('users', __name__)
-api = Api(user_blueprint)
+users_blueprint = Blueprint('users', __name__)
+api = Api(users_blueprint)
 
 class UsersList(Resource):
     
