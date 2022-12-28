@@ -11,6 +11,6 @@ def test_add_user(test_app, test_database):
     )
     data = json.loads(resp.data.decode())
     assert resp.status_code == 201
-    assert 'hamda.hamda.com was added' in data['message']
+    assert 'hamda@hamda.com was added' in data['message']
     
 
